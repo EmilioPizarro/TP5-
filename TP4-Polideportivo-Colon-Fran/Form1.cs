@@ -94,7 +94,7 @@ namespace Polideportivo_Colón
             txtLimiteGruposEnCola.Text = limiteGruposEnCola.ToString();
 
             int tiempoLimpieza = 10;
-            txtTiempoLimpieza.Text = tiempoLimpieza.ToString();
+            //txtTiempoLimpieza.Text = tiempoLimpieza.ToString();
         }
 
         private void btnCargaPorDefecto_Click(object sender, EventArgs e)
@@ -495,7 +495,22 @@ namespace Polideportivo_Colón
 
         }
 
+     
+
+        private void btn_Euler_Click(object sender, EventArgs e)
+        {
+            VtnEuler ventanaEuler = new VtnEuler();
+
+            ventanaEuler.Show();
+
+            ventanaEuler.h_paso = txtPaso_h.Text;
+            ventanaEuler.d_basket = txtDbasket.Text;
+            ventanaEuler.d_futbol = txtDfutbol.Text;
+            ventanaEuler.d_handball = txtDhandball.Text;
 
 
+
+
+        }
     }
 }
