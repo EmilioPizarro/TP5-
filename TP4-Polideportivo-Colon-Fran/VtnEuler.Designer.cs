@@ -57,6 +57,8 @@
             dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn9 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
+            label8 = new Label();
+            txt_cont_Limpieza = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dtg_euler_futbol).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtg_euler_basket).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtg_euler_handball).BeginInit();
@@ -308,11 +310,29 @@
             dataGridViewTextBoxColumn10.ReadOnly = true;
             dataGridViewTextBoxColumn10.Width = 80;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(172, 19);
+            label8.Name = "label8";
+            label8.Size = new Size(127, 20);
+            label8.TabIndex = 14;
+            label8.Text = "Cont Limpieza (C)";
+            // 
+            // txt_cont_Limpieza
+            // 
+            txt_cont_Limpieza.Location = new Point(305, 16);
+            txt_cont_Limpieza.Name = "txt_cont_Limpieza";
+            txt_cont_Limpieza.Size = new Size(125, 27);
+            txt_cont_Limpieza.TabIndex = 15;
+            // 
             // VtnEuler
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1429, 706);
+            Controls.Add(txt_cont_Limpieza);
+            Controls.Add(label8);
             Controls.Add(dtg_euler_handball);
             Controls.Add(dtg_euler_basket);
             Controls.Add(dtg_euler_futbol);
@@ -368,5 +388,7 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private Label label8;
+        private TextBox txt_cont_Limpieza;
     }
 }

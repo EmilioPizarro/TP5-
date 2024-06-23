@@ -36,6 +36,9 @@ namespace Polideportivo_Colón
             txt_d_basket_read.Text = d_basket;
             txt_d_futbol_read.Text = d_futbol;
             txt_d_handball_read.Text = d_handball;
+            int contadorInicial = 0;    
+            txt_cont_Limpieza.Text = contadorInicial.ToString();
+
 
 
         }
