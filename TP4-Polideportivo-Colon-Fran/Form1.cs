@@ -12,6 +12,7 @@ namespace Polideportivo_Colón
 {
     public partial class Form1 : Form
     {
+        int contador_limpiezas = 0;
         //Constantes Eventos
         public const int LLEGADA_FUTBOL = 0;
         public const int LLEGADA_BASKET = 1;
@@ -138,7 +139,6 @@ namespace Polideportivo_Colón
                 string.IsNullOrWhiteSpace(txtOcupacion_B_Basket.Text) ||
                 string.IsNullOrWhiteSpace(txtOcupacion_B_Futbol.Text) ||
                 string.IsNullOrWhiteSpace(txtOcupacion_B_Handbal.Text) ||
-                string.IsNullOrWhiteSpace(txtTiempoLimpieza.Text) ||
                 string.IsNullOrWhiteSpace(txtTiempoTotal.Text);
 
         }
@@ -171,6 +171,12 @@ namespace Polideportivo_Colón
                                         "Limpieza"
             };
 
+            double[] Tiempos_Limpieza = {
+                double.Parse(txtDfutbol.Text),
+                double.Parse(txtDbasket.Text),
+                double.Parse(txtDhandball.Text)
+            };
+
             double tiempo_max = double.Parse(txtTiempoTotal.Text);
             int maximo_cola = int.Parse(txtLimiteGruposEnCola.Text);
             int IteracionesMostrar = int.Parse(txtIteracionesMostrar.Text);
@@ -198,8 +204,7 @@ namespace Polideportivo_Colón
                                         double.Parse(txtOcupacion_B_Handbal.Text)/60
                                     };
 
-            //Tiempo de limpieza como son en minutos se los divide por 60
-            double tiempo_limp = double.Parse(txtTiempoLimpieza.Text) / 60;
+
 
 
 
@@ -228,11 +233,15 @@ namespace Polideportivo_Colón
             int contador_equipos_salida = 0;
             int numeroFila = 0;
 
-
+            //Tiempo de limpieza como son en minutos se los divide por 60
+                double tiempo_limp = 0;
+            contador_limpiezas = 0;
 
             // Realizar la simulaci�n para cada d�a
             for (int i = 0; i <= 100000; i += 1)
             {
+                
+
                 tiempo_actual = tiempo_proximo_evento;
                 string evento_actual = proximo_evento;
                 if (tiempo_actual >= 24 * Contador_dias)
@@ -313,6 +322,7 @@ namespace Polideportivo_Colón
                         estado_actual = estados_cancha[LIMPIEZA];
                         tiempo_entre_evento[FIN_FUTBOL] = 0;
                         tiempo_proximos_eventos[FIN_FUTBOL] = 0;
+                        tiempo_limp = calcular_tiempo_limpieza(Tiempos_Limpieza[FUTBOL],contador_limpiezas)/60;
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = Math.Round(tiempo_actual + tiempo_limp, 4);
                         grupo_actual.Estado = "DESTRUIDO";
                         break;
@@ -322,6 +332,7 @@ namespace Polideportivo_Colón
                         estado_actual = estados_cancha[LIMPIEZA];
                         tiempo_entre_evento[FIN_BASKET] = 0;
                         tiempo_proximos_eventos[FIN_BASKET] = 0;
+                        tiempo_limp = calcular_tiempo_limpieza(Tiempos_Limpieza[BASKET],contador_limpiezas)/60;
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = Math.Round(tiempo_actual + tiempo_limp, 4);
                         grupo_actual.Estado = "DESTRUIDO";
                         break;
@@ -331,6 +342,7 @@ namespace Polideportivo_Colón
                         estado_actual = estados_cancha[LIMPIEZA];
                         tiempo_entre_evento[FIN_HANDBALL] = 0;
                         tiempo_proximos_eventos[FIN_HANDBALL] = 0;
+                        tiempo_limp = calcular_tiempo_limpieza(Tiempos_Limpieza[HANDBALL],contador_limpiezas)/60;
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = Math.Round(tiempo_actual + tiempo_limp, 4);
                         grupo_actual.Estado = "DESTRUIDO";
                         break;
@@ -338,6 +350,7 @@ namespace Polideportivo_Colón
                     case "Fin Limpieza":
                         estado_actual = estados_cancha[LIBRE];
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = 0;
+                        contador_limpiezas+= 1;
                         break;
 
                     default:
@@ -495,22 +508,37 @@ namespace Polideportivo_Colón
 
         }
 
-     
+
 
         private void btn_Euler_Click(object sender, EventArgs e)
         {
             VtnEuler ventanaEuler = new VtnEuler();
-
-            ventanaEuler.Show();
-
             ventanaEuler.h_paso = txtPaso_h.Text;
             ventanaEuler.d_basket = txtDbasket.Text;
             ventanaEuler.d_futbol = txtDfutbol.Text;
             ventanaEuler.d_handball = txtDhandball.Text;
 
+            ventanaEuler.Show();
+            ventanaEuler.cargar_dtg(contador_limpiezas);
+            
+
+            
 
 
 
+
+        }
+        private double calcular_tiempo_limpieza(double D, int C){
+            double Di = 0;
+            double Di_1 = 0;
+            double h = double.Parse(txtPaso_h.Text);
+            double t = 0;
+            for(t=0; Di < D; t+=h){
+                Di_1 = Di + (0.6*C+(t))*h;
+                Di= Di_1;
+            }
+
+            return t;
         }
     }
 }

@@ -16,3 +16,21 @@ D:\Facultad\SIM\Practico\Trabajos Practicos\TP 5\Polideportivo Colon Con RK\TP5-
 D:\Facultad\SIM\Practico\Trabajos Practicos\TP 5\Polideportivo Colon Con RK\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.genruntimeconfig.cache
 D:\Facultad\SIM\Practico\Trabajos Practicos\TP 5\Polideportivo Colon Con RK\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\ref\Polideportivo Colón.dll
 D:\Facultad\SIM\Practico\Trabajos Practicos\TP 5\Polideportivo Colon Con RK\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo_Colón.VtnEuler.resources
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\bin\Debug\net8.0-windows\Polideportivo Colón.exe
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\bin\Debug\net8.0-windows\Polideportivo Colón.deps.json
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\bin\Debug\net8.0-windows\Polideportivo Colón.runtimeconfig.json
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\bin\Debug\net8.0-windows\Polideportivo Colón.dll
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\bin\Debug\net8.0-windows\Polideportivo Colón.pdb
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo_Colón.Form1.resources
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo_Colón.VtnEuler.resources
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.csproj.GenerateResource.cache
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.GeneratedMSBuildEditorConfig.editorconfig
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.AssemblyInfoInputs.cache
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.AssemblyInfo.cs
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.csproj.CoreCompileInputs.cache
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.sourcelink.json
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.dll
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\refint\Polideportivo Colón.dll
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.pdb
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\Polideportivo Colón.genruntimeconfig.cache
+e:\Falcultad\4to\Simulacion\TPs\TP5-\TP4-Polideportivo-Colon-Fran\obj\Debug\net8.0-windows\ref\Polideportivo Colón.dll

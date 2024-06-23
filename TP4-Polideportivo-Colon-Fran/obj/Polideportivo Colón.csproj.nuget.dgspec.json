@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultad\\SIM\\Practico\\Trabajos Practicos\\TP 5\\Polideportivo Colon Con RK\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj": {}
+    "e:\\Falcultad\\4to\\Simulacion\\TPs\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj": {}
   },
   "projects": {
-    "D:\\Facultad\\SIM\\Practico\\Trabajos Practicos\\TP 5\\Polideportivo Colon Con RK\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj": {
+    "e:\\Falcultad\\4to\\Simulacion\\TPs\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultad\\SIM\\Practico\\Trabajos Practicos\\TP 5\\Polideportivo Colon Con RK\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj",
+        "projectUniqueName": "e:\\Falcultad\\4to\\Simulacion\\TPs\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj",
         "projectName": "Polideportivo Colón",
-        "projectPath": "D:\\Facultad\\SIM\\Practico\\Trabajos Practicos\\TP 5\\Polideportivo Colon Con RK\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj",
-        "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultad\\SIM\\Practico\\Trabajos Practicos\\TP 5\\Polideportivo Colon Con RK\\TP5-\\TP4-Polideportivo-Colon-Fran\\obj\\",
+        "projectPath": "e:\\Falcultad\\4to\\Simulacion\\TPs\\TP5-\\TP4-Polideportivo-Colon-Fran\\Polideportivo Colón.csproj",
+        "packagesPath": "C:\\Users\\Octavio\\.nuget\\packages\\",
+        "outputPath": "e:\\Falcultad\\4to\\Simulacion\\TPs\\TP5-\\TP4-Polideportivo-Colon-Fran\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Octavio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

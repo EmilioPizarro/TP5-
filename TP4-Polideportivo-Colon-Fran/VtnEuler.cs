@@ -39,5 +39,16 @@ namespace Polideportivo_Colón
 
 
         }
+
+        public void cargar_dtg(int C){
+            double Di = 0;
+            double Di_1 = 0;
+            double h = double.Parse(h_paso);
+            for(double t=0; Di < double.Parse(d_futbol); t+=h){
+                Di_1 = Di + (0.6*C+(t))*h;
+                dtg_euler_futbol.Rows.Add(t,Di,(0.6*C+(t)),t+h,Di_1);
+                Di= Di_1;
+            }
+        }
     }
 }
