@@ -29,34 +29,6 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            Evento = new DataGridViewTextBoxColumn();
-            Reloj = new DataGridViewTextBoxColumn();
-            RND_Llegadas = new DataGridViewTextBoxColumn();
-            TiempoEntreLlegadasFutbol = new DataGridViewTextBoxColumn();
-            ProximaLlegadaFutbol = new DataGridViewTextBoxColumn();
-            TiempoEntreLlegadasHandball = new DataGridViewTextBoxColumn();
-            ProximaLlegadaHandball = new DataGridViewTextBoxColumn();
-            TiempoEntreLlegadasBasket = new DataGridViewTextBoxColumn();
-            ProximaLlegadaBasket = new DataGridViewTextBoxColumn();
-            RND_Fin_Ocupacion = new DataGridViewTextBoxColumn();
-            TiempoOcupacionFutbol = new DataGridViewTextBoxColumn();
-            TiempoOcupacionHandball = new DataGridViewTextBoxColumn();
-            TiempoOcupacionBasquet = new DataGridViewTextBoxColumn();
-            FinFutbol = new DataGridViewTextBoxColumn();
-            FinHandball = new DataGridViewTextBoxColumn();
-            FinBasquet = new DataGridViewTextBoxColumn();
-            FinLimpieza = new DataGridViewTextBoxColumn();
-            EstadoCancha = new DataGridViewTextBoxColumn();
-            ColaCancha = new DataGridViewTextBoxColumn();
-            EstadoLimpiador = new DataGridViewTextBoxColumn();
-            CEF = new DataGridViewTextBoxColumn();
-            CEH = new DataGridViewTextBoxColumn();
-            CEB = new DataGridViewTextBoxColumn();
-            AC_TiempoEsperaFutbol = new DataGridViewTextBoxColumn();
-            AC_TiempoEsperaHandball = new DataGridViewTextBoxColumn();
-            AC_TiempoEsperaBasquet = new DataGridViewTextBoxColumn();
-            AC_TiempoLibreCancha = new DataGridViewTextBoxColumn();
-            ContadorDias = new DataGridViewTextBoxColumn();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -113,6 +85,35 @@
             txtDhandball = new TextBox();
             label16 = new Label();
             txtDbasket = new TextBox();
+            Evento = new DataGridViewTextBoxColumn();
+            Reloj = new DataGridViewTextBoxColumn();
+            RND_Llegadas = new DataGridViewTextBoxColumn();
+            TiempoEntreLlegadasFutbol = new DataGridViewTextBoxColumn();
+            ProximaLlegadaFutbol = new DataGridViewTextBoxColumn();
+            TiempoEntreLlegadasHandball = new DataGridViewTextBoxColumn();
+            ProximaLlegadaHandball = new DataGridViewTextBoxColumn();
+            TiempoEntreLlegadasBasket = new DataGridViewTextBoxColumn();
+            ProximaLlegadaBasket = new DataGridViewTextBoxColumn();
+            RND_Fin_Ocupacion = new DataGridViewTextBoxColumn();
+            TiempoOcupacionFutbol = new DataGridViewTextBoxColumn();
+            TiempoOcupacionHandball = new DataGridViewTextBoxColumn();
+            TiempoOcupacionBasquet = new DataGridViewTextBoxColumn();
+            FinFutbol = new DataGridViewTextBoxColumn();
+            FinHandball = new DataGridViewTextBoxColumn();
+            FinBasquet = new DataGridViewTextBoxColumn();
+            TiempoLimpieza = new DataGridViewTextBoxColumn();
+            FinLimpieza = new DataGridViewTextBoxColumn();
+            EstadoCancha = new DataGridViewTextBoxColumn();
+            ColaCancha = new DataGridViewTextBoxColumn();
+            ContadorLimpieza = new DataGridViewTextBoxColumn();
+            CEF = new DataGridViewTextBoxColumn();
+            CEH = new DataGridViewTextBoxColumn();
+            CEB = new DataGridViewTextBoxColumn();
+            AC_TiempoEsperaFutbol = new DataGridViewTextBoxColumn();
+            AC_TiempoEsperaHandball = new DataGridViewTextBoxColumn();
+            AC_TiempoEsperaBasquet = new DataGridViewTextBoxColumn();
+            AC_TiempoLibreCancha = new DataGridViewTextBoxColumn();
+            ContadorDias = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtgLlegadas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtgOcupacion).BeginInit();
@@ -121,234 +122,13 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Evento, Reloj, RND_Llegadas, TiempoEntreLlegadasFutbol, ProximaLlegadaFutbol, TiempoEntreLlegadasHandball, ProximaLlegadaHandball, TiempoEntreLlegadasBasket, ProximaLlegadaBasket, RND_Fin_Ocupacion, TiempoOcupacionFutbol, TiempoOcupacionHandball, TiempoOcupacionBasquet, FinFutbol, FinHandball, FinBasquet, FinLimpieza, EstadoCancha, ColaCancha, EstadoLimpiador, CEF, CEH, CEB, AC_TiempoEsperaFutbol, AC_TiempoEsperaHandball, AC_TiempoEsperaBasquet, AC_TiempoLibreCancha, ContadorDias });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Evento, Reloj, RND_Llegadas, TiempoEntreLlegadasFutbol, ProximaLlegadaFutbol, TiempoEntreLlegadasHandball, ProximaLlegadaHandball, TiempoEntreLlegadasBasket, ProximaLlegadaBasket, RND_Fin_Ocupacion, TiempoOcupacionFutbol, TiempoOcupacionHandball, TiempoOcupacionBasquet, FinFutbol, FinHandball, FinBasquet, TiempoLimpieza, FinLimpieza, EstadoCancha, ColaCancha, ContadorLimpieza, CEF, CEH, CEB, AC_TiempoEsperaFutbol, AC_TiempoEsperaHandball, AC_TiempoEsperaBasquet, AC_TiempoLibreCancha, ContadorDias });
             dataGridView1.Location = new Point(14, 247);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1735, 637);
             dataGridView1.TabIndex = 0;
-            // 
-            // Evento
-            // 
-            Evento.HeaderText = "Evento";
-            Evento.MinimumWidth = 6;
-            Evento.Name = "Evento";
-            Evento.ReadOnly = true;
-            Evento.Width = 125;
-            // 
-            // Reloj
-            // 
-            Reloj.HeaderText = "Reloj";
-            Reloj.MinimumWidth = 6;
-            Reloj.Name = "Reloj";
-            Reloj.ReadOnly = true;
-            Reloj.Width = 125;
-            // 
-            // RND_Llegadas
-            // 
-            RND_Llegadas.HeaderText = "RND_Llegadas";
-            RND_Llegadas.MinimumWidth = 6;
-            RND_Llegadas.Name = "RND_Llegadas";
-            RND_Llegadas.ReadOnly = true;
-            RND_Llegadas.Width = 125;
-            // 
-            // TiempoEntreLlegadasFutbol
-            // 
-            TiempoEntreLlegadasFutbol.HeaderText = "TiempoEntreLlegadasFutbol";
-            TiempoEntreLlegadasFutbol.MinimumWidth = 6;
-            TiempoEntreLlegadasFutbol.Name = "TiempoEntreLlegadasFutbol";
-            TiempoEntreLlegadasFutbol.ReadOnly = true;
-            TiempoEntreLlegadasFutbol.Width = 170;
-            // 
-            // ProximaLlegadaFutbol
-            // 
-            ProximaLlegadaFutbol.HeaderText = "ProximaLlegadaFutbol";
-            ProximaLlegadaFutbol.MinimumWidth = 6;
-            ProximaLlegadaFutbol.Name = "ProximaLlegadaFutbol";
-            ProximaLlegadaFutbol.ReadOnly = true;
-            ProximaLlegadaFutbol.Width = 170;
-            // 
-            // TiempoEntreLlegadasHandball
-            // 
-            TiempoEntreLlegadasHandball.HeaderText = "TiempoEntreLlegadasHandball";
-            TiempoEntreLlegadasHandball.MinimumWidth = 6;
-            TiempoEntreLlegadasHandball.Name = "TiempoEntreLlegadasHandball";
-            TiempoEntreLlegadasHandball.ReadOnly = true;
-            TiempoEntreLlegadasHandball.Width = 170;
-            // 
-            // ProximaLlegadaHandball
-            // 
-            ProximaLlegadaHandball.HeaderText = "ProximaLlegadaHandball";
-            ProximaLlegadaHandball.MinimumWidth = 6;
-            ProximaLlegadaHandball.Name = "ProximaLlegadaHandball";
-            ProximaLlegadaHandball.ReadOnly = true;
-            ProximaLlegadaHandball.Width = 170;
-            // 
-            // TiempoEntreLlegadasBasket
-            // 
-            TiempoEntreLlegadasBasket.HeaderText = "TiempoEntreLlegadasBasket";
-            TiempoEntreLlegadasBasket.MinimumWidth = 6;
-            TiempoEntreLlegadasBasket.Name = "TiempoEntreLlegadasBasket";
-            TiempoEntreLlegadasBasket.ReadOnly = true;
-            TiempoEntreLlegadasBasket.Width = 170;
-            // 
-            // ProximaLlegadaBasket
-            // 
-            ProximaLlegadaBasket.HeaderText = "ProximaLlegadaBasket";
-            ProximaLlegadaBasket.MinimumWidth = 6;
-            ProximaLlegadaBasket.Name = "ProximaLlegadaBasket";
-            ProximaLlegadaBasket.ReadOnly = true;
-            ProximaLlegadaBasket.Width = 170;
-            // 
-            // RND_Fin_Ocupacion
-            // 
-            RND_Fin_Ocupacion.HeaderText = "RND_Fin_Ocupacion";
-            RND_Fin_Ocupacion.MinimumWidth = 6;
-            RND_Fin_Ocupacion.Name = "RND_Fin_Ocupacion";
-            RND_Fin_Ocupacion.ReadOnly = true;
-            RND_Fin_Ocupacion.Width = 125;
-            // 
-            // TiempoOcupacionFutbol
-            // 
-            TiempoOcupacionFutbol.HeaderText = "TiempoOcupacionFutbol";
-            TiempoOcupacionFutbol.MinimumWidth = 6;
-            TiempoOcupacionFutbol.Name = "TiempoOcupacionFutbol";
-            TiempoOcupacionFutbol.ReadOnly = true;
-            TiempoOcupacionFutbol.Width = 170;
-            // 
-            // TiempoOcupacionHandball
-            // 
-            TiempoOcupacionHandball.HeaderText = "TiempoOcupacionHandball";
-            TiempoOcupacionHandball.MinimumWidth = 6;
-            TiempoOcupacionHandball.Name = "TiempoOcupacionHandball";
-            TiempoOcupacionHandball.ReadOnly = true;
-            TiempoOcupacionHandball.Width = 170;
-            // 
-            // TiempoOcupacionBasquet
-            // 
-            TiempoOcupacionBasquet.HeaderText = "TiempoOcupacionBasquet";
-            TiempoOcupacionBasquet.MinimumWidth = 6;
-            TiempoOcupacionBasquet.Name = "TiempoOcupacionBasquet";
-            TiempoOcupacionBasquet.ReadOnly = true;
-            TiempoOcupacionBasquet.Width = 170;
-            // 
-            // FinFutbol
-            // 
-            FinFutbol.HeaderText = "FinFutbol";
-            FinFutbol.MinimumWidth = 6;
-            FinFutbol.Name = "FinFutbol";
-            FinFutbol.ReadOnly = true;
-            FinFutbol.Width = 125;
-            // 
-            // FinHandball
-            // 
-            FinHandball.HeaderText = "FinHandball";
-            FinHandball.MinimumWidth = 6;
-            FinHandball.Name = "FinHandball";
-            FinHandball.ReadOnly = true;
-            FinHandball.Width = 125;
-            // 
-            // FinBasquet
-            // 
-            FinBasquet.HeaderText = "FinBasquet";
-            FinBasquet.MinimumWidth = 6;
-            FinBasquet.Name = "FinBasquet";
-            FinBasquet.ReadOnly = true;
-            FinBasquet.Width = 125;
-            // 
-            // FinLimpieza
-            // 
-            FinLimpieza.HeaderText = "FinLimpieza";
-            FinLimpieza.MinimumWidth = 6;
-            FinLimpieza.Name = "FinLimpieza";
-            FinLimpieza.ReadOnly = true;
-            FinLimpieza.Width = 125;
-            // 
-            // EstadoCancha
-            // 
-            EstadoCancha.HeaderText = "EstadoCancha";
-            EstadoCancha.MinimumWidth = 6;
-            EstadoCancha.Name = "EstadoCancha";
-            EstadoCancha.ReadOnly = true;
-            EstadoCancha.Width = 125;
-            // 
-            // ColaCancha
-            // 
-            ColaCancha.HeaderText = "ColaCancha";
-            ColaCancha.MinimumWidth = 6;
-            ColaCancha.Name = "ColaCancha";
-            ColaCancha.ReadOnly = true;
-            ColaCancha.Width = 125;
-            // 
-            // EstadoLimpiador
-            // 
-            EstadoLimpiador.HeaderText = "EstadoLimpiador";
-            EstadoLimpiador.MinimumWidth = 6;
-            EstadoLimpiador.Name = "EstadoLimpiador";
-            EstadoLimpiador.ReadOnly = true;
-            EstadoLimpiador.Width = 125;
-            // 
-            // CEF
-            // 
-            CEF.HeaderText = "Contador Equipos Futbol";
-            CEF.MinimumWidth = 6;
-            CEF.Name = "CEF";
-            CEF.Width = 125;
-            // 
-            // CEH
-            // 
-            CEH.HeaderText = "Contador Equipos Handball";
-            CEH.MinimumWidth = 6;
-            CEH.Name = "CEH";
-            CEH.Width = 125;
-            // 
-            // CEB
-            // 
-            CEB.HeaderText = "Contador Equipos Basquet";
-            CEB.MinimumWidth = 6;
-            CEB.Name = "CEB";
-            CEB.Width = 125;
-            // 
-            // AC_TiempoEsperaFutbol
-            // 
-            AC_TiempoEsperaFutbol.HeaderText = "AC_TiempoEsperaFutbol";
-            AC_TiempoEsperaFutbol.MinimumWidth = 6;
-            AC_TiempoEsperaFutbol.Name = "AC_TiempoEsperaFutbol";
-            AC_TiempoEsperaFutbol.ReadOnly = true;
-            AC_TiempoEsperaFutbol.Width = 170;
-            // 
-            // AC_TiempoEsperaHandball
-            // 
-            AC_TiempoEsperaHandball.HeaderText = "AC_TiempoEsperaHandball";
-            AC_TiempoEsperaHandball.MinimumWidth = 6;
-            AC_TiempoEsperaHandball.Name = "AC_TiempoEsperaHandball";
-            AC_TiempoEsperaHandball.ReadOnly = true;
-            AC_TiempoEsperaHandball.Width = 170;
-            // 
-            // AC_TiempoEsperaBasquet
-            // 
-            AC_TiempoEsperaBasquet.HeaderText = "AC_TiempoEsperaBasquet";
-            AC_TiempoEsperaBasquet.MinimumWidth = 6;
-            AC_TiempoEsperaBasquet.Name = "AC_TiempoEsperaBasquet";
-            AC_TiempoEsperaBasquet.ReadOnly = true;
-            AC_TiempoEsperaBasquet.Width = 170;
-            // 
-            // AC_TiempoLibreCancha
-            // 
-            AC_TiempoLibreCancha.HeaderText = "AC_TiempoLibreCancha";
-            AC_TiempoLibreCancha.MinimumWidth = 6;
-            AC_TiempoLibreCancha.Name = "AC_TiempoLibreCancha";
-            AC_TiempoLibreCancha.ReadOnly = true;
-            AC_TiempoLibreCancha.Width = 170;
-            // 
-            // ContadorDias
-            // 
-            ContadorDias.HeaderText = "ContadorDias";
-            ContadorDias.MinimumWidth = 6;
-            ContadorDias.Name = "ContadorDias";
-            ContadorDias.ReadOnly = true;
-            ContadorDias.Width = 125;
             // 
             // label1
             // 
@@ -838,6 +618,235 @@
             txtDbasket.Size = new Size(59, 27);
             txtDbasket.TabIndex = 46;
             // 
+            // Evento
+            // 
+            Evento.HeaderText = "Evento";
+            Evento.MinimumWidth = 6;
+            Evento.Name = "Evento";
+            Evento.ReadOnly = true;
+            Evento.Width = 125;
+            // 
+            // Reloj
+            // 
+            Reloj.HeaderText = "Reloj";
+            Reloj.MinimumWidth = 6;
+            Reloj.Name = "Reloj";
+            Reloj.ReadOnly = true;
+            Reloj.Width = 125;
+            // 
+            // RND_Llegadas
+            // 
+            RND_Llegadas.HeaderText = "RND_Llegadas";
+            RND_Llegadas.MinimumWidth = 6;
+            RND_Llegadas.Name = "RND_Llegadas";
+            RND_Llegadas.ReadOnly = true;
+            RND_Llegadas.Width = 125;
+            // 
+            // TiempoEntreLlegadasFutbol
+            // 
+            TiempoEntreLlegadasFutbol.HeaderText = "TiempoEntreLlegadasFutbol";
+            TiempoEntreLlegadasFutbol.MinimumWidth = 6;
+            TiempoEntreLlegadasFutbol.Name = "TiempoEntreLlegadasFutbol";
+            TiempoEntreLlegadasFutbol.ReadOnly = true;
+            TiempoEntreLlegadasFutbol.Width = 170;
+            // 
+            // ProximaLlegadaFutbol
+            // 
+            ProximaLlegadaFutbol.HeaderText = "ProximaLlegadaFutbol";
+            ProximaLlegadaFutbol.MinimumWidth = 6;
+            ProximaLlegadaFutbol.Name = "ProximaLlegadaFutbol";
+            ProximaLlegadaFutbol.ReadOnly = true;
+            ProximaLlegadaFutbol.Width = 170;
+            // 
+            // TiempoEntreLlegadasHandball
+            // 
+            TiempoEntreLlegadasHandball.HeaderText = "TiempoEntreLlegadasHandball";
+            TiempoEntreLlegadasHandball.MinimumWidth = 6;
+            TiempoEntreLlegadasHandball.Name = "TiempoEntreLlegadasHandball";
+            TiempoEntreLlegadasHandball.ReadOnly = true;
+            TiempoEntreLlegadasHandball.Width = 170;
+            // 
+            // ProximaLlegadaHandball
+            // 
+            ProximaLlegadaHandball.HeaderText = "ProximaLlegadaHandball";
+            ProximaLlegadaHandball.MinimumWidth = 6;
+            ProximaLlegadaHandball.Name = "ProximaLlegadaHandball";
+            ProximaLlegadaHandball.ReadOnly = true;
+            ProximaLlegadaHandball.Width = 170;
+            // 
+            // TiempoEntreLlegadasBasket
+            // 
+            TiempoEntreLlegadasBasket.HeaderText = "TiempoEntreLlegadasBasket";
+            TiempoEntreLlegadasBasket.MinimumWidth = 6;
+            TiempoEntreLlegadasBasket.Name = "TiempoEntreLlegadasBasket";
+            TiempoEntreLlegadasBasket.ReadOnly = true;
+            TiempoEntreLlegadasBasket.Width = 170;
+            // 
+            // ProximaLlegadaBasket
+            // 
+            ProximaLlegadaBasket.HeaderText = "ProximaLlegadaBasket";
+            ProximaLlegadaBasket.MinimumWidth = 6;
+            ProximaLlegadaBasket.Name = "ProximaLlegadaBasket";
+            ProximaLlegadaBasket.ReadOnly = true;
+            ProximaLlegadaBasket.Width = 170;
+            // 
+            // RND_Fin_Ocupacion
+            // 
+            RND_Fin_Ocupacion.HeaderText = "RND_Fin_Ocupacion";
+            RND_Fin_Ocupacion.MinimumWidth = 6;
+            RND_Fin_Ocupacion.Name = "RND_Fin_Ocupacion";
+            RND_Fin_Ocupacion.ReadOnly = true;
+            RND_Fin_Ocupacion.Width = 125;
+            // 
+            // TiempoOcupacionFutbol
+            // 
+            TiempoOcupacionFutbol.HeaderText = "TiempoOcupacionFutbol";
+            TiempoOcupacionFutbol.MinimumWidth = 6;
+            TiempoOcupacionFutbol.Name = "TiempoOcupacionFutbol";
+            TiempoOcupacionFutbol.ReadOnly = true;
+            TiempoOcupacionFutbol.Width = 170;
+            // 
+            // TiempoOcupacionHandball
+            // 
+            TiempoOcupacionHandball.HeaderText = "TiempoOcupacionHandball";
+            TiempoOcupacionHandball.MinimumWidth = 6;
+            TiempoOcupacionHandball.Name = "TiempoOcupacionHandball";
+            TiempoOcupacionHandball.ReadOnly = true;
+            TiempoOcupacionHandball.Width = 170;
+            // 
+            // TiempoOcupacionBasquet
+            // 
+            TiempoOcupacionBasquet.HeaderText = "TiempoOcupacionBasquet";
+            TiempoOcupacionBasquet.MinimumWidth = 6;
+            TiempoOcupacionBasquet.Name = "TiempoOcupacionBasquet";
+            TiempoOcupacionBasquet.ReadOnly = true;
+            TiempoOcupacionBasquet.Width = 170;
+            // 
+            // FinFutbol
+            // 
+            FinFutbol.HeaderText = "FinFutbol";
+            FinFutbol.MinimumWidth = 6;
+            FinFutbol.Name = "FinFutbol";
+            FinFutbol.ReadOnly = true;
+            FinFutbol.Width = 125;
+            // 
+            // FinHandball
+            // 
+            FinHandball.HeaderText = "FinHandball";
+            FinHandball.MinimumWidth = 6;
+            FinHandball.Name = "FinHandball";
+            FinHandball.ReadOnly = true;
+            FinHandball.Width = 125;
+            // 
+            // FinBasquet
+            // 
+            FinBasquet.HeaderText = "FinBasquet";
+            FinBasquet.MinimumWidth = 6;
+            FinBasquet.Name = "FinBasquet";
+            FinBasquet.ReadOnly = true;
+            FinBasquet.Width = 125;
+            // 
+            // TiempoLimpieza
+            // 
+            TiempoLimpieza.HeaderText = "TiempoLimpieza";
+            TiempoLimpieza.MinimumWidth = 6;
+            TiempoLimpieza.Name = "TiempoLimpieza";
+            TiempoLimpieza.ReadOnly = true;
+            TiempoLimpieza.Width = 125;
+            // 
+            // FinLimpieza
+            // 
+            FinLimpieza.HeaderText = "FinLimpieza";
+            FinLimpieza.MinimumWidth = 6;
+            FinLimpieza.Name = "FinLimpieza";
+            FinLimpieza.ReadOnly = true;
+            FinLimpieza.Width = 125;
+            // 
+            // EstadoCancha
+            // 
+            EstadoCancha.HeaderText = "EstadoCancha";
+            EstadoCancha.MinimumWidth = 6;
+            EstadoCancha.Name = "EstadoCancha";
+            EstadoCancha.ReadOnly = true;
+            EstadoCancha.Width = 125;
+            // 
+            // ColaCancha
+            // 
+            ColaCancha.HeaderText = "ColaCancha";
+            ColaCancha.MinimumWidth = 6;
+            ColaCancha.Name = "ColaCancha";
+            ColaCancha.ReadOnly = true;
+            ColaCancha.Width = 125;
+            // 
+            // ContadorLimpieza
+            // 
+            ContadorLimpieza.HeaderText = "ContadorLimpieza";
+            ContadorLimpieza.MinimumWidth = 6;
+            ContadorLimpieza.Name = "ContadorLimpieza";
+            ContadorLimpieza.ReadOnly = true;
+            ContadorLimpieza.Width = 125;
+            // 
+            // CEF
+            // 
+            CEF.HeaderText = "Contador Equipos Futbol";
+            CEF.MinimumWidth = 6;
+            CEF.Name = "CEF";
+            CEF.Width = 125;
+            // 
+            // CEH
+            // 
+            CEH.HeaderText = "Contador Equipos Handball";
+            CEH.MinimumWidth = 6;
+            CEH.Name = "CEH";
+            CEH.Width = 125;
+            // 
+            // CEB
+            // 
+            CEB.HeaderText = "Contador Equipos Basquet";
+            CEB.MinimumWidth = 6;
+            CEB.Name = "CEB";
+            CEB.Width = 125;
+            // 
+            // AC_TiempoEsperaFutbol
+            // 
+            AC_TiempoEsperaFutbol.HeaderText = "AC_TiempoEsperaFutbol";
+            AC_TiempoEsperaFutbol.MinimumWidth = 6;
+            AC_TiempoEsperaFutbol.Name = "AC_TiempoEsperaFutbol";
+            AC_TiempoEsperaFutbol.ReadOnly = true;
+            AC_TiempoEsperaFutbol.Width = 170;
+            // 
+            // AC_TiempoEsperaHandball
+            // 
+            AC_TiempoEsperaHandball.HeaderText = "AC_TiempoEsperaHandball";
+            AC_TiempoEsperaHandball.MinimumWidth = 6;
+            AC_TiempoEsperaHandball.Name = "AC_TiempoEsperaHandball";
+            AC_TiempoEsperaHandball.ReadOnly = true;
+            AC_TiempoEsperaHandball.Width = 170;
+            // 
+            // AC_TiempoEsperaBasquet
+            // 
+            AC_TiempoEsperaBasquet.HeaderText = "AC_TiempoEsperaBasquet";
+            AC_TiempoEsperaBasquet.MinimumWidth = 6;
+            AC_TiempoEsperaBasquet.Name = "AC_TiempoEsperaBasquet";
+            AC_TiempoEsperaBasquet.ReadOnly = true;
+            AC_TiempoEsperaBasquet.Width = 170;
+            // 
+            // AC_TiempoLibreCancha
+            // 
+            AC_TiempoLibreCancha.HeaderText = "AC_TiempoLibreCancha";
+            AC_TiempoLibreCancha.MinimumWidth = 6;
+            AC_TiempoLibreCancha.Name = "AC_TiempoLibreCancha";
+            AC_TiempoLibreCancha.ReadOnly = true;
+            AC_TiempoLibreCancha.Width = 170;
+            // 
+            // ContadorDias
+            // 
+            ContadorDias.HeaderText = "ContadorDias";
+            ContadorDias.MinimumWidth = 6;
+            ContadorDias.Name = "ContadorDias";
+            ContadorDias.ReadOnly = true;
+            ContadorDias.Width = 125;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -945,6 +954,20 @@
         private TextBox txtPromedioEsperaBasket;
         private Label label13;
         private TextBox txtPromedioLibreCancha;
+        private DataGridViewTextBoxColumn Estado1;
+        private DataGridViewTextBoxColumn Disciplina1;
+        private DataGridViewTextBoxColumn HoraLlegada1;
+        private DataGridViewTextBoxColumn Estado2;
+        private DataGridViewTextBoxColumn Disciplina2;
+        private DataGridViewTextBoxColumn HoraLlegada2;
+        private Button btn_Euler;
+        private TextBox txtPaso_h;
+        private TextBox txtDfutbol;
+        private Label label14;
+        private Label label15;
+        private TextBox txtDhandball;
+        private Label label16;
+        private TextBox txtDbasket;
         private DataGridViewTextBoxColumn Evento;
         private DataGridViewTextBoxColumn Reloj;
         private DataGridViewTextBoxColumn RND_Llegadas;
@@ -961,10 +984,11 @@
         private DataGridViewTextBoxColumn FinFutbol;
         private DataGridViewTextBoxColumn FinHandball;
         private DataGridViewTextBoxColumn FinBasquet;
+        private DataGridViewTextBoxColumn TiempoLimpieza;
         private DataGridViewTextBoxColumn FinLimpieza;
         private DataGridViewTextBoxColumn EstadoCancha;
         private DataGridViewTextBoxColumn ColaCancha;
-        private DataGridViewTextBoxColumn EstadoLimpiador;
+        private DataGridViewTextBoxColumn ContadorLimpieza;
         private DataGridViewTextBoxColumn CEF;
         private DataGridViewTextBoxColumn CEH;
         private DataGridViewTextBoxColumn CEB;
@@ -973,19 +997,5 @@
         private DataGridViewTextBoxColumn AC_TiempoEsperaBasquet;
         private DataGridViewTextBoxColumn AC_TiempoLibreCancha;
         private DataGridViewTextBoxColumn ContadorDias;
-        private DataGridViewTextBoxColumn Estado1;
-        private DataGridViewTextBoxColumn Disciplina1;
-        private DataGridViewTextBoxColumn HoraLlegada1;
-        private DataGridViewTextBoxColumn Estado2;
-        private DataGridViewTextBoxColumn Disciplina2;
-        private DataGridViewTextBoxColumn HoraLlegada2;
-        private Button btn_Euler;
-        private TextBox txtPaso_h;
-        private TextBox txtDfutbol;
-        private Label label14;
-        private Label label15;
-        private TextBox txtDhandball;
-        private Label label16;
-        private TextBox txtDbasket;
     }
 }
