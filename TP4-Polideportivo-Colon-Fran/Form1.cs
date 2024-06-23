@@ -94,8 +94,18 @@ namespace Polideportivo_Colón
             int limiteGruposEnCola = 5;
             txtLimiteGruposEnCola.Text = limiteGruposEnCola.ToString();
 
-            int tiempoLimpieza = 10;
-            //txtTiempoLimpieza.Text = tiempoLimpieza.ToString();
+            double h = 0.1;
+            txtPaso_h.Text = h.ToString();
+
+            int D_fut = 100;
+            txtDfutbol.Text = D_fut.ToString();
+
+            int D_bas = 300;
+            txtDbasket.Text = D_bas.ToString();
+
+            int D_hand = 10;
+            txtDhandball.Text = D_hand.ToString();
+
         }
 
         private void btnCargaPorDefecto_Click(object sender, EventArgs e)
