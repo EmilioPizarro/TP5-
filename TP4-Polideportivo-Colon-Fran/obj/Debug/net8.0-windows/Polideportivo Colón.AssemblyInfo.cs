@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Polideportivo Colón")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3923f842cc3182725ecbc55be3a8a1ec7ddc46ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c2e637baaeca0242a79cddba5c70e5c8610eeec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Polideportivo Colón")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Polideportivo Colón")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

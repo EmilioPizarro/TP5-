@@ -59,6 +59,7 @@
             dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
             label8 = new Label();
             txt_cont_Limpieza = new TextBox();
+            btn_cargarTablas = new Button();
             ((System.ComponentModel.ISupportInitialize)dtg_euler_futbol).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtg_euler_basket).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtg_euler_handball).BeginInit();
@@ -326,11 +327,21 @@
             txt_cont_Limpieza.Size = new Size(125, 27);
             txt_cont_Limpieza.TabIndex = 15;
             // 
+            // btn_cargarTablas
+            // 
+            btn_cargarTablas.Location = new Point(447, 14);
+            btn_cargarTablas.Name = "btn_cargarTablas";
+            btn_cargarTablas.Size = new Size(119, 29);
+            btn_cargarTablas.TabIndex = 16;
+            btn_cargarTablas.Text = "Cargar Tablas";
+            btn_cargarTablas.UseVisualStyleBackColor = true;
+            // 
             // VtnEuler
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1429, 706);
+            Controls.Add(btn_cargarTablas);
             Controls.Add(txt_cont_Limpieza);
             Controls.Add(label8);
             Controls.Add(dtg_euler_handball);
@@ -390,5 +401,6 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private Label label8;
         private TextBox txt_cont_Limpieza;
+        private Button btn_cargarTablas;
     }
 }
