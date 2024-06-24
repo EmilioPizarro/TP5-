@@ -103,7 +103,7 @@ namespace Polideportivo_Colón
             int D_bas = 300;
             txtDbasket.Text = D_bas.ToString();
 
-            int D_hand = 10;
+            int D_hand = 200;
             txtDhandball.Text = D_hand.ToString();
 
         }
@@ -401,7 +401,7 @@ namespace Polideportivo_Colón
                                             tiempo_entre_evento[LLEGADA_HANDBALL], tiempo_proximos_eventos[LLEGADA_HANDBALL], tiempo_entre_evento[LLEGADA_BASKET],
                                             tiempo_proximos_eventos[LLEGADA_BASKET], RND_Ocup, tiempo_entre_evento[FIN_FUTBOL],
                                             tiempo_entre_evento[FIN_HANDBALL], tiempo_entre_evento[FIN_BASKET], tiempo_proximos_eventos[FIN_FUTBOL], tiempo_proximos_eventos[FIN_HANDBALL],
-                                            tiempo_proximos_eventos[FIN_BASKET], tiempo_proximos_eventos[FIN_LIMPIEZA], estado_actual, ColaActual.Count, "--", Contador_equipos[FUTBOL],
+                                            tiempo_proximos_eventos[FIN_BASKET],tiempo_limp ,tiempo_proximos_eventos[FIN_LIMPIEZA], estado_actual, ColaActual.Count,contador_limpiezas, Contador_equipos[FUTBOL],
                                             Contador_equipos[HANDBALL], Contador_equipos[BASKET], AC_Tiempo_espera[FUTBOL], AC_Tiempo_espera[HANDBALL], AC_Tiempo_espera[BASKET],
                                             AC_tiempo_libre, Contador_dias);
                     if (sumar_contador(Contador_equipos) > 0)
@@ -425,6 +425,7 @@ namespace Polideportivo_Colón
                 {
                     tiempo_entre_evento[j] = 0;
                 }
+                tiempo_limp = 0;
                 RND_Lleg = 0;
                 RND_Ocup = 0;
 
@@ -453,7 +454,7 @@ namespace Polideportivo_Colón
                                             "", tiempo_proximos_eventos[LLEGADA_HANDBALL], "",
                                             tiempo_proximos_eventos[LLEGADA_BASKET], "", "",
                                             "", "", tiempo_proximos_eventos[FIN_FUTBOL], tiempo_proximos_eventos[FIN_HANDBALL],
-                                            tiempo_proximos_eventos[FIN_BASKET], tiempo_proximos_eventos[FIN_LIMPIEZA], estado_actual, ColaActual.Count, "--", Contador_equipos[FUTBOL],
+                                            tiempo_proximos_eventos[FIN_BASKET],"", tiempo_proximos_eventos[FIN_LIMPIEZA], estado_actual, ColaActual.Count, contador_limpiezas, Contador_equipos[FUTBOL],
                                             Contador_equipos[HANDBALL], Contador_equipos[BASKET], AC_Tiempo_espera[FUTBOL], AC_Tiempo_espera[HANDBALL], AC_Tiempo_espera[BASKET],
                                             AC_tiempo_libre, Contador_dias);
 
@@ -529,7 +530,7 @@ namespace Polideportivo_Colón
             ventanaEuler.d_handball = txtDhandball.Text;
 
             ventanaEuler.Show();
-            ventanaEuler.cargar_dtg(contador_limpiezas);
+            ventanaEuler.cargar_dtg();
             
 
             
