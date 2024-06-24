@@ -335,6 +335,7 @@
             btn_cargarTablas.TabIndex = 16;
             btn_cargarTablas.Text = "Cargar Tablas";
             btn_cargarTablas.UseVisualStyleBackColor = true;
+            btn_cargarTablas.Click += btnCargarTablas_Click;
             // 
             // VtnEuler
             // 

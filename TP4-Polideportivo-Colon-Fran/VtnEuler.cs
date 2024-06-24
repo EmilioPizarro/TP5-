@@ -43,7 +43,8 @@ namespace Polideportivo_Colón
 
         }
 
-        public void cargar_dtg(){
+        public void btnCargarTablas_Click(object sender, EventArgs e){
+            limpiarDTG();
             double Di = 0;
             double Di_1 = 0;
             double h = double.Parse(h_paso);
@@ -67,6 +68,12 @@ namespace Polideportivo_Colón
                 dtg_euler_handball.Rows.Add(t,Di,(0.6*C+(t)),t+h,Di_1);
                 Di= Di_1;
             }
+        }
+
+        public void limpiarDTG(){
+            dtg_euler_basket.Rows.Clear();
+            dtg_euler_futbol.Rows.Clear();
+            dtg_euler_handball.Rows.Clear();
         }
     }
 }

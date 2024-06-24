@@ -530,13 +530,6 @@ namespace Polideportivo_Colón
             ventanaEuler.d_handball = txtDhandball.Text;
 
             ventanaEuler.Show();
-            ventanaEuler.cargar_dtg();
-            
-
-            
-
-
-
 
         }
         private double calcular_tiempo_limpieza(double D, int C){
