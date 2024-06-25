@@ -332,7 +332,7 @@ namespace Polideportivo_Colón
                         estado_actual = estados_cancha[LIMPIEZA];
                         tiempo_entre_evento[FIN_FUTBOL] = 0;
                         tiempo_proximos_eventos[FIN_FUTBOL] = 0;
-                        tiempo_limp = calcular_tiempo_limpieza(Tiempos_Limpieza[FUTBOL],contador_limpiezas)/60;
+                        tiempo_limp = Math.Round(calcular_tiempo_limpieza(Tiempos_Limpieza[FUTBOL], contador_limpiezas) / 60,4);
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = Math.Round(tiempo_actual + tiempo_limp, 4);
                         grupo_actual.Estado = "DESTRUIDO";
                         break;
@@ -342,7 +342,7 @@ namespace Polideportivo_Colón
                         estado_actual = estados_cancha[LIMPIEZA];
                         tiempo_entre_evento[FIN_BASKET] = 0;
                         tiempo_proximos_eventos[FIN_BASKET] = 0;
-                        tiempo_limp = calcular_tiempo_limpieza(Tiempos_Limpieza[BASKET],contador_limpiezas)/60;
+                        tiempo_limp = Math.Round(calcular_tiempo_limpieza(Tiempos_Limpieza[BASKET],contador_limpiezas)/60,4);
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = Math.Round(tiempo_actual + tiempo_limp, 4);
                         grupo_actual.Estado = "DESTRUIDO";
                         break;
@@ -352,7 +352,7 @@ namespace Polideportivo_Colón
                         estado_actual = estados_cancha[LIMPIEZA];
                         tiempo_entre_evento[FIN_HANDBALL] = 0;
                         tiempo_proximos_eventos[FIN_HANDBALL] = 0;
-                        tiempo_limp = calcular_tiempo_limpieza(Tiempos_Limpieza[HANDBALL],contador_limpiezas)/60;
+                        tiempo_limp = Math.Round(calcular_tiempo_limpieza(Tiempos_Limpieza[HANDBALL],contador_limpiezas)/60,4);
                         tiempo_proximos_eventos[FIN_LIMPIEZA] = Math.Round(tiempo_actual + tiempo_limp, 4);
                         grupo_actual.Estado = "DESTRUIDO";
                         break;
