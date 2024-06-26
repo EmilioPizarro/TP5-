@@ -49,25 +49,29 @@ namespace Polideportivo_Colón
             double Di_1 = 0;
             double h = double.Parse(h_paso);
             int C = int.Parse(txt_cont_Limpieza.Text);
-            for(double t=0; Di < double.Parse(d_futbol); t+=h){
-                Di_1 = Di + (0.6*C+(t))*h;
-                dtg_euler_futbol.Rows.Add(t,Di,(0.6*C+(t)),t+h,Di_1);
+            double t=0;
+            for( t=0; Di < double.Parse(d_futbol); t+=h){
+                Di_1 = Math.Round(Di +(0.6*C+(t))*h,4);
+                dtg_euler_futbol.Rows.Add(Math.Round(t,4),Di,Math.Round(0.6*C+(t),4),Math.Round(t+h,4),Di_1);
                 Di= Di_1;
             }
+            dtg_euler_futbol.Rows.Add(Math.Round(t,4),Di,"","","");
             Di = 0;
             Di_1 = 0;
-            for(double t=0; Di < double.Parse(d_basket); t+=h){
-                Di_1 = Di + (0.6*C+(t))*h;
-                dtg_euler_basket.Rows.Add(t,Di,(0.6*C+(t)),t+h,Di_1);
+            for( t=0; Di < double.Parse(d_basket); t+=h){
+                Di_1 = Math.Round(Di +(0.6*C+(t))*h,4);
+                dtg_euler_basket.Rows.Add(Math.Round(t,4),Di,Math.Round(0.6*C+(t),4),Math.Round(t+h,4),Di_1);
                 Di= Di_1;
             }
+            dtg_euler_basket.Rows.Add(Math.Round(t,4),Di,"","","");
              Di = 0;
              Di_1 = 0;
-            for(double t=0; Di < double.Parse(d_handball); t+=h){
-                Di_1 = Di + (0.6*C+(t))*h;
-                dtg_euler_handball.Rows.Add(t,Di,(0.6*C+(t)),t+h,Di_1);
+            for(t=0; Di < double.Parse(d_handball); t+=h){
+                Di_1 =  Math.Round(Di + (0.6*C+(t))*h,4);
+                dtg_euler_handball.Rows.Add(Math.Round(t,4),Di,Math.Round(0.6*C+(t),4),Math.Round(t+h,4),Di_1);
                 Di= Di_1;
             }
+             dtg_euler_handball.Rows.Add(Math.Round(t,4),Di,"","","");
         }
 
         public void limpiarDTG(){
